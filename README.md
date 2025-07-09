@@ -28,7 +28,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: notion-sync
-      uses: YouXam/Notion-GitHub-Sync@v1
+      uses: huytd/Notion-GitHub-Sync@v1
       with:
         notion_token: ${{ secrets.NOTION_TOKEN }}
 ```
