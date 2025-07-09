@@ -12,7 +12,6 @@ import yaml
 from notion2md.exporter.block import MarkdownExporter
 from notion_client import AsyncClient
 from dateutil import parser as dateutil
-from translate import translate
 
 logging.basicConfig(level=logging.DEBUG if os.environ.get("debug") else logging.INFO)
 author = None
@@ -188,7 +187,7 @@ async def update_list(file_path):
             title = old_files[page["id"]]["title"]
         else:
             if rtitle:
-                title = translate(rtitle)
+                title = rtitle
                 if subdir:
                     ext = ""
                 else:
