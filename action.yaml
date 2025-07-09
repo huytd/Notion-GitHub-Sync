@@ -1,5 +1,5 @@
-name: Sync Notion to GitHub
-author: YouXam
+name: Sync Notion to GitHub (by YouXam)
+author: huytd
 branding:
   icon: 'arrow-down-circle'
   color: 'blue'
@@ -26,7 +26,7 @@ runs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        repository: 'YouXam/Notion-GitHub-Sync'
+        repository: 'huytd/Notion-GitHub-Sync'
         path: "notion-sync"
   
     - name: Setup python
