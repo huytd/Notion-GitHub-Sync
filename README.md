@@ -17,7 +17,7 @@ name: sync-notion-to-github
 
 on:
   schedule:
-    - cron: '0 0 * * *' # every day at 00:00 UTC
+    - cron: '*/15 * * * *' # every 15 minutes
   workflow_dispatch:
   push:
     branches:
